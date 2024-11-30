@@ -1,0 +1,21 @@
+{
+    "name": "GURO Community",
+    "short_name": "GURO",
+    "description": "Присоединяйтесь к GURO — элитному сообществу профессионалов гемблинга. Курсы от iGaming School для арбитражников, рекламодателей и провайдеров.",
+    "start_url": "https://igaming-school.com",
+    "display": "standalone",
+    "background_color": "#141419",
+    "theme_color": "#141419",
+    "dir": "ltr",
+    "lang": "ru",
+    "categories": ["education", "business", "community"],
+    "shortcuts": [
+      {
+        "name": "Курсы iGaming School",
+        "short_name": "Курсы",
+        "description": "Изучите профессиональные курсы для гемблинг-индустрии.",
+        "url": "#courses"
+      }
+    ]
+  }
+  

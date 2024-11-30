@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /login.php
+Disallow: /protected.php
+Allow: /
+
+Sitemap: https://igaming-school.com/sitemap.xml
