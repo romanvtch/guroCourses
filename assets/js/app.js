@@ -145,7 +145,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     sortList.querySelectorAll('.list__select').forEach(item => item.classList.remove('selected'));
                     event.target.classList.add('selected');
-
+                    toggleOpenControls(directionContainer, event);
+                    toggleOpenControls(sortContainer, event);
                     updateDirections(selectedCategory, data, directions);
                 }
             };
@@ -153,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const handleDirectionListClick = (event) => {
                 if (event.target.classList.contains("list__select")) {
                     const selectedName = event.target.dataset.value;
-                    directionSelected.textContent = selectedName;
+                    directionSelected.innerHTML  = `<p>${selectedName}</p>`;
 
                     directionList.querySelectorAll('.list__select').forEach(item => item.classList.remove('selected'));
                     event.target.classList.add('selected');

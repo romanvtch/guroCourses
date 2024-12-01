@@ -710,15 +710,25 @@ header {
     height: 40px;
     display: flex;
     cursor: pointer;
-    padding: 0 16px;
+    padding: 0 24px 0 16px;
     position: relative;
-
     align-items: center;
     border-radius: 12px;
     color: rgba(240, 240, 240, 0.92);
     background-color: #303035;
     box-shadow: inset 0px -1px 1px rgba(17, 24, 39, 0.25);
-    width: 244px;
+    width: 280px;
+
+
+
+}
+
+.sort__selected p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 2px;
+    padding-right: 5px;
 }
 
 .sort__selected::before {
@@ -741,15 +751,34 @@ header {
     border-radius: 0 0 12px 12px;
     background-color: #303035;
     color: #b0bac5;
-    width: 244px;
+    width: 280px;
+    overflow-y: auto;
+    max-height: 350px;
+}
+
+.sort__list::-webkit-scrollbar {
+    width: 5px;
+
+    background-color: transparent;
+}
+
+.sort__list::-webkit-scrollbar-thumb {
+    border-radius: 0 0 14px 0;
+    background-color: var(--green);
+}
+
+.sort__list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
 .list__select {
-    height: 40px;
+    height: 45px;
+    min-height: 45px;
     display: flex;
     cursor: pointer;
     align-items: center;
     padding: 0 16px;
+    line-height: 120%;
     color: rgba(240, 240, 240, 0.82);
 }
 
@@ -1278,10 +1307,12 @@ textarea {
 
     background-color: var(--green);
 }
-.form-notice{
+
+.form-notice {
     font-size: 16px;
     color: var(--green);
 }
+
 .form__group .group {
     gap: 8px;
     display: flex;
@@ -1430,4 +1461,3 @@ footer {
         flex-direction: column;
     }
 }
-
